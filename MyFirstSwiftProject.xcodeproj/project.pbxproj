@@ -13,6 +13,7 @@
 		31251666197FF696003F252B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31251665197FF696003F252B /* Images.xcassets */; };
 		31251672197FF696003F252B /* MyFirstSwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31251671197FF696003F252B /* MyFirstSwiftProjectTests.swift */; };
 		3166A3161985B8960009C775 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166A3151985B8960009C775 /* Store.swift */; };
+		31EC76AD1987083A00F9F47C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EC76AB1987083A00F9F47C /* SwiftyJSON.swift */; };
 		48816AF0BFD04AB1A8EA399A /* libPods-MyFirstSwiftProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3630919B9B5A4E57B47EC2F5 /* libPods-MyFirstSwiftProject.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,8 @@
 		31251671197FF696003F252B /* MyFirstSwiftProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSwiftProjectTests.swift; sourceTree = "<group>"; };
 		3166A3151985B8960009C775 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Store.swift; path = Classes/Store.swift; sourceTree = "<group>"; };
 		3166A3171985B9AF0009C775 /* Project-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Project-Bridging-Header.h"; path = "Classes/Project-Bridging-Header.h"; sourceTree = "<group>"; };
+		31EC76AA1987083A00F9F47C /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		31EC76AB1987083A00F9F47C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		3630919B9B5A4E57B47EC2F5 /* libPods-MyFirstSwiftProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFirstSwiftProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,9 +126,19 @@
 		3166A3141985B7FC0009C775 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				31EC76A81987083A00F9F47C /* SwiftyJSON */,
 				3166A3151985B8960009C775 /* Store.swift */,
 			);
 			name = Store;
+			sourceTree = "<group>";
+		};
+		31EC76A81987083A00F9F47C /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				31EC76AA1987083A00F9F47C /* SwiftyJSON.h */,
+				31EC76AB1987083A00F9F47C /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		6188FB88A20A437F8419D2C3 /* Frameworks */ = {
@@ -274,6 +287,7 @@
 				3166A3161985B8960009C775 /* Store.swift in Sources */,
 				31251661197FF696003F252B /* ViewController.swift in Sources */,
 				3125165F197FF696003F252B /* AppDelegate.swift in Sources */,
+				31EC76AD1987083A00F9F47C /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

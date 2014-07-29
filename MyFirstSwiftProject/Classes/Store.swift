@@ -30,16 +30,16 @@ class Store {
             
             println("JSON: " + responseObject.description)
           
-            //let redditData:Array<Dictionary<String,String>> = responseObject["data"] as Array!
-            if let jsonResult = responseObject as? Dictionary<String, AnyObject> {
-                // do whatever with jsonResult
-                
-                for redditData in enumerate(jsonResult) {
+            let json = JSONValue(responseObject)
+            let reddits = json["data"]["children"].array!
+            
+                for redditData in reddits {
                     
+                    let redditDictionary:Dictionary = redditData["data"].object!
                     var reddit = Reddit()
+                    reddit.redditTitle = redditDictionary["title"]?.string
                 }
-                
-            }
+            
      
             }, failure:  { (operation: NSURLSessionDataTask!,
                 error: NSError!) in
