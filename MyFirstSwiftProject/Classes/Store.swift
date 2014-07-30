@@ -23,7 +23,8 @@ class Store {
         return Static.instance
     }
    
-    func parseReddits() {
+    typealias completionHandler = (reddits:[Reddit]) -> Void
+    func parseReddits(completionClosure:completionHandler) {
     
         AFHTTPSessionManager().GET(REDDIT_TOP, parameters: nil, success: { (operation: NSURLSessionDataTask!,
             responseObject: AnyObject!) in
@@ -31,15 +32,19 @@ class Store {
             println("JSON: " + responseObject.description)
           
             let json = JSONValue(responseObject)
-            let reddits = json["data"]["children"].array!
+            let topReddits = json["data"]["children"].array!
             
-                for redditData in reddits {
+            var reddits = [Reddit]()
+            
+                for redditData in topReddits {
                     
                     let redditDictionary:Dictionary = redditData["data"].object!
                     var reddit = Reddit()
                     reddit.redditTitle = redditDictionary["title"]?.string
+                    reddits.append(reddit)
                 }
             
+            completionClosure(reddits:reddits)
      
             }, failure:  { (operation: NSURLSessionDataTask!,
                 error: NSError!) in
