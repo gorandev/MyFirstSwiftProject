@@ -28,8 +28,6 @@ class Store {
     
         AFHTTPSessionManager().GET(REDDIT_TOP, parameters: nil, success: { (operation: NSURLSessionDataTask!,
             responseObject: AnyObject!) in
-            
-            println("JSON: " + responseObject.description)
           
             let json = JSONValue(responseObject)
             let topReddits = json["data"]["children"].array!

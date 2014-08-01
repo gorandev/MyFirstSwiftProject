@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310F5F09198BD9F0004C90E3 /* MyOtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310F5F08198BD9F0004C90E3 /* MyOtherTableViewCell.swift */; };
 		3125165F197FF696003F252B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125165E197FF696003F252B /* AppDelegate.swift */; };
 		31251661197FF696003F252B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31251660197FF696003F252B /* ViewController.swift */; };
 		31251664197FF696003F252B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31251662197FF696003F252B /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		07BD71397A424E1B8F387CD5 /* Pods-MyFirstSwiftProject.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstSwiftProject.xcconfig"; path = "Pods/Pods-MyFirstSwiftProject.xcconfig"; sourceTree = "<group>"; };
+		310F5F08198BD9F0004C90E3 /* MyOtherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyOtherTableViewCell.swift; path = Classes/MyOtherTableViewCell.swift; sourceTree = "<group>"; };
 		31251659197FF696003F252B /* MyFirstSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3125165D197FF696003F252B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3125165E197FF696003F252B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		3125165B197FF696003F252B /* MyFirstSwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				3193A2BF19894CF200F69237 /* Cells */,
 				3166A3141985B7FC0009C775 /* Store */,
 				3125165E197FF696003F252B /* AppDelegate.swift */,
 				31251660197FF696003F252B /* ViewController.swift */,
@@ -130,6 +133,14 @@
 				3166A3151985B8960009C775 /* Store.swift */,
 			);
 			name = Store;
+			sourceTree = "<group>";
+		};
+		3193A2BF19894CF200F69237 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				310F5F08198BD9F0004C90E3 /* MyOtherTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		31EC76A81987083A00F9F47C /* SwiftyJSON */ = {
@@ -287,6 +298,7 @@
 				3166A3161985B8960009C775 /* Store.swift in Sources */,
 				31251661197FF696003F252B /* ViewController.swift in Sources */,
 				3125165F197FF696003F252B /* AppDelegate.swift in Sources */,
+				310F5F09198BD9F0004C90E3 /* MyOtherTableViewCell.swift in Sources */,
 				31EC76AD1987083A00F9F47C /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
