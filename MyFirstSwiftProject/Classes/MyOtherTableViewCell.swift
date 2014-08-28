@@ -11,11 +11,20 @@ import UIKit
 class MyOtherTableViewCell: UITableViewCell {
 
     @IBOutlet weak var redditTitle: UILabel!
-    init(style: UITableViewCellStyle, reuseIdentifier: String) {
+    override init(style: UITableViewCellStyle, reuseIdentifier: String) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         // Initialization code
     }
 
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder:aDecoder)
+    }
+
+    override func layoutSubviews() {
+        redditTitle.preferredMaxLayoutWidth = redditTitle.bounds.width
+        self.contentView.layoutIfNeeded()
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

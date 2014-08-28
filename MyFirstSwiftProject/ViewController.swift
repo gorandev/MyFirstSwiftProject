@@ -60,7 +60,7 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
         // Also note, the final width of the cell may not be the width of the table view in some cases, for example when a
         // section index is displayed along the right side of the table view. You must account for the reduced cell width.
      
-        //cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
+        //cell.bounds = CGRectMake(0.0, 0.0, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
         
         var redditEntry = self.reddits[indexPath.row];
         cell.redditTitle.text = redditEntry.redditTitle;

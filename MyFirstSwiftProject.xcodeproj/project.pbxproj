@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3103F89419AF5CEF002441B5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103F89319AF5CEF002441B5 /* SwiftyJSON.swift */; };
 		310F5F09198BD9F0004C90E3 /* MyOtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310F5F08198BD9F0004C90E3 /* MyOtherTableViewCell.swift */; };
 		3125165F197FF696003F252B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125165E197FF696003F252B /* AppDelegate.swift */; };
 		31251661197FF696003F252B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31251660197FF696003F252B /* ViewController.swift */; };
@@ -14,7 +15,6 @@
 		31251666197FF696003F252B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31251665197FF696003F252B /* Images.xcassets */; };
 		31251672197FF696003F252B /* MyFirstSwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31251671197FF696003F252B /* MyFirstSwiftProjectTests.swift */; };
 		3166A3161985B8960009C775 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166A3151985B8960009C775 /* Store.swift */; };
-		31EC76AD1987083A00F9F47C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EC76AB1987083A00F9F47C /* SwiftyJSON.swift */; };
 		48816AF0BFD04AB1A8EA399A /* libPods-MyFirstSwiftProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3630919B9B5A4E57B47EC2F5 /* libPods-MyFirstSwiftProject.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		07BD71397A424E1B8F387CD5 /* Pods-MyFirstSwiftProject.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstSwiftProject.xcconfig"; path = "Pods/Pods-MyFirstSwiftProject.xcconfig"; sourceTree = "<group>"; };
+		3103F89319AF5CEF002441B5 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		310F5F08198BD9F0004C90E3 /* MyOtherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyOtherTableViewCell.swift; path = Classes/MyOtherTableViewCell.swift; sourceTree = "<group>"; };
 		31251659197FF696003F252B /* MyFirstSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3125165D197FF696003F252B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		3166A3151985B8960009C775 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Store.swift; path = Classes/Store.swift; sourceTree = "<group>"; };
 		3166A3171985B9AF0009C775 /* Project-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Project-Bridging-Header.h"; path = "Classes/Project-Bridging-Header.h"; sourceTree = "<group>"; };
 		31EC76AA1987083A00F9F47C /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
-		31EC76AB1987083A00F9F47C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		3630919B9B5A4E57B47EC2F5 /* libPods-MyFirstSwiftProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFirstSwiftProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,8 +146,8 @@
 		31EC76A81987083A00F9F47C /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
+				3103F89319AF5CEF002441B5 /* SwiftyJSON.swift */,
 				31EC76AA1987083A00F9F47C /* SwiftyJSON.h */,
-				31EC76AB1987083A00F9F47C /* SwiftyJSON.swift */,
 			);
 			path = SwiftyJSON;
 			sourceTree = "<group>";
@@ -298,8 +298,8 @@
 				3166A3161985B8960009C775 /* Store.swift in Sources */,
 				31251661197FF696003F252B /* ViewController.swift in Sources */,
 				3125165F197FF696003F252B /* AppDelegate.swift in Sources */,
+				3103F89419AF5CEF002441B5 /* SwiftyJSON.swift in Sources */,
 				310F5F09198BD9F0004C90E3 /* MyOtherTableViewCell.swift in Sources */,
-				31EC76AD1987083A00F9F47C /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
