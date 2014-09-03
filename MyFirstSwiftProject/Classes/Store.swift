@@ -12,6 +12,7 @@ let REDDIT_TOP = "http://www.reddit.com/top.json?limit=25"
 
 struct Reddit {
     var redditTitle:String? = nil
+    var redditNumComments:Int? = nil
 }
 
 class Store {
@@ -39,6 +40,7 @@ class Store {
                     let redditDictionary:Dictionary = redditData["data"].object!
                     var reddit = Reddit()
                     reddit.redditTitle = redditDictionary["title"]?.string
+                    reddit.redditNumComments = redditDictionary["num_comments"]?.integer
                     reddits.append(reddit)
                 }
             

@@ -29,19 +29,20 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
         })
     }
 
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
         return reddits.count
     }
     
-    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath: NSIndexPath) -> UITableViewCell {
         
-      var cell = self.tableView.dequeueReusableCellWithIdentifier("MyOtherIdentifier", forIndexPath: indexPath) as MyOtherTableViewCell
-        cell.redditTitle.text = reddits[indexPath.row].redditTitle
-        return  cell
+        var cell = self.tableView.dequeueReusableCellWithIdentifier("MyOtherIdentifier", forIndexPath: cellForRowAtIndexPath) as MyOtherTableViewCell
+        
+        cell.redditTitle.text = self.createCellText(reddits[cellForRowAtIndexPath.row])
+        return cell
     }
     
-    func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
         
         // Dequeue a cell for the particular layout required (you will likely need to substitute
         // the reuse identifier dynamically at runtime, instead of a static string as below).
@@ -63,7 +64,7 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
         //cell.bounds = CGRectMake(0.0, 0.0, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
         
         var redditEntry = self.reddits[indexPath.row];
-        cell.redditTitle.text = redditEntry.redditTitle;
+        cell.redditTitle.text = self.createCellText(redditEntry);
         
         // Do the layout pass on the cell, which will calculate the frames for all the views based on the constraints.
         // (Note that you must set the preferredMaxLayoutWidth on multi-line UILabels inside the -[layoutSubviews] method
@@ -75,5 +76,19 @@ class ViewController: UIViewController, UITableViewDelegate , UITableViewDataSou
         return height;
     }
 
+    private func createCellText(r: Reddit) -> String {
+        var text = String()
+        
+        if let title = r.redditTitle {
+            text = "\(title)"
+        }
+        
+        if let comments = r.redditNumComments {
+            text += "\n\(comments) comments"
+        }
+        
+        return text
+    }
+    
 }
 
